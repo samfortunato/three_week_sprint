@@ -32,6 +32,7 @@ factorialMemo(7); // 5040; requires 2 calls
 // memoizing fibs
 
 // non-memoized; O(2^n)
+// calls itself recursively TWICE
 
 function fib(n) {
   if (n === 1 || n === 2) return 1;

@@ -1,7 +1,8 @@
 const findMissingNumber = (completeArr, incompleteArr) => {
-  const encounteredNums = {};
+  const completeArrSum = completeArr.reduce((acc, el) => acc + el);
+  const incompleteArrSum = incompleteArr.reduce((acc, el) => acc + el);
 
-
+  return completeArrSum - incompleteArrSum;
 };
 
 findMissingNumber([8, 3, 5, 1], [1, 5, 3]);
